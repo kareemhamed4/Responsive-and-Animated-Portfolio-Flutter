@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_profile/constants.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
-import '../../../constants.dart';
-
-class Knowledges extends StatelessWidget {
-  const Knowledges({
+class Knowledge extends StatelessWidget {
+  const Knowledge({
     Key? key,
   }) : super(key: key);
 
@@ -18,13 +16,13 @@ class Knowledges extends StatelessWidget {
           padding: const EdgeInsets.symmetric(
               vertical: defaultPadding),
           child: Text(
-            "Knowledges",
+            "Knowledge",
             style: Theme.of(context).textTheme.subtitle2,
           ),
         ),
         KnowledgeText(text: "Flutter, Dart"),
-        KnowledgeText(text: "Stylus, Sass, Less"),
-        KnowledgeText(text: "Gulp, Webpack, Grunt"),
+        KnowledgeText(text: "Responsive screen"),
+        KnowledgeText(text: "Singleton, JSON Web Token"),
         KnowledgeText(text: "GIT Knowledge"),
       ],
     );

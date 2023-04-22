@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_profile/constants.dart';
 import 'package:flutter_profile/models/Project.dart';
 import 'package:flutter_profile/responsive.dart';
-
-import '../../../constants.dart';
-import 'project_card.dart';
+import 'package:flutter_profile/screens/home/components/project_card.dart';
 
 class MyProjects extends StatelessWidget {
   const MyProjects({
@@ -49,7 +48,7 @@ class ProjectsGridView extends StatelessWidget {
     return GridView.builder(
       shrinkWrap: true,
       physics: NeverScrollableScrollPhysics(),
-      itemCount: demo_projects.length,
+      itemCount: demoProjects.length,
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: crossAxisCount,
         childAspectRatio: childAspectRatio,
@@ -57,7 +56,7 @@ class ProjectsGridView extends StatelessWidget {
         mainAxisSpacing: defaultPadding,
       ),
       itemBuilder: (context, index) => ProjectCard(
-        project: demo_projects[index],
+        project: demoProjects[index],
       ),
     );
   }

@@ -105,15 +105,19 @@ class AnimatedText extends StatelessWidget {
     return AnimatedTextKit(
       animatedTexts: [
         TyperAnimatedText(
-          "responsive web and mobile app.",
+          "Complete Emerg-e-care App",
           speed: Duration(milliseconds: 60),
         ),
         TyperAnimatedText(
-          "complete e-Commerce app UI.",
+          "complete E-Commerce app UI.",
           speed: Duration(milliseconds: 60),
         ),
         TyperAnimatedText(
-          "Chat app with dark and light theme.",
+          "Complete Social App with dark and light theme.",
+          speed: Duration(milliseconds: 60),
+        ),
+        TyperAnimatedText(
+          "Responsive Portfolio - Flutter UI",
           speed: Duration(milliseconds: 60),
         ),
       ],

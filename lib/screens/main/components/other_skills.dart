@@ -3,8 +3,8 @@ import 'package:flutter_profile/components/animated_progress_indicator.dart';
 import 'package:flutter_profile/constants.dart';
 
 
-class Coding extends StatelessWidget {
-  const Coding({
+class OtherSkills extends StatelessWidget {
+  const OtherSkills({
     Key? key,
   }) : super(key: key);
 
@@ -17,33 +17,33 @@ class Coding extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(vertical: defaultPadding),
           child: Text(
-            "Coding",
+            "Other Skills",
             style: Theme.of(context).textTheme.subtitle2,
           ),
         ),
         AnimatedLinearProgressIndicator(
-          percentage: 0.7,
-          label: "Dart",
+          percentage: 0.75,
+          label: "Rest API",
         ),
         AnimatedLinearProgressIndicator(
-          percentage: 0.39,
-          label: "Kotlin",
-        ),
-        AnimatedLinearProgressIndicator(
-          percentage: 0.38,
-          label: "Java",
+          percentage: 0.58,
+          label: "Design pattern",
         ),
         AnimatedLinearProgressIndicator(
           percentage: 0.6,
-          label: "C++",
+          label: "Clean Code",
         ),
         AnimatedLinearProgressIndicator(
           percentage: 0.65,
-          label: "HTML",
+          label: "NVVM",
         ),
         AnimatedLinearProgressIndicator(
           percentage: 0.6,
-          label: "CSS",
+          label: "GIT",
+        ),
+        AnimatedLinearProgressIndicator(
+          percentage: 0.9,
+          label: "Soft Skills",
         ),
       ],
     );

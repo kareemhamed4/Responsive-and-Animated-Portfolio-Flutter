@@ -16,19 +16,28 @@ class MyInfo extends StatelessWidget {
             Spacer(flex: 2),
             CircleAvatar(
               radius: 50,
-              backgroundImage: AssetImage("assets/images/IMG_7344.jpg"),
+              backgroundImage: AssetImage("assets/images/kareem.png"),
             ),
             Spacer(),
             Text(
-              "Abu Anwar",
+              "Kareem Mohamed",
               style: Theme.of(context).textTheme.subtitle2,
             ),
             Text(
-              "Flutter Developer & Founder of \n The Flutter Way",
+              "Flutter Developer",
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontWeight: FontWeight.w200,
                 height: 1.5,
+              ),
+            ),
+            Text(
+              "President of Student Union 2019 & 2020 and 2021",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontWeight: FontWeight.w200,
+                height: 1.5,
+                fontSize: 10
               ),
             ),
             Spacer(flex: 2),
