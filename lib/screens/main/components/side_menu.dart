@@ -5,7 +5,6 @@ import 'package:flutter_profile/screens/main/components/knowledges.dart';
 import 'package:flutter_profile/screens/main/components/other_skills.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:url_launcher/url_launcher.dart';
-
 import 'area_info_text.dart';
 import 'coding.dart';
 import 'my_info.dart';
@@ -55,7 +54,8 @@ class SideMenu extends StatelessWidget {
                     TextButton(
                       onPressed: () {
                         _launchInBrowser(
-                          Uri(scheme: 'https', host: 'drive.google.com', path: '/file/d/1O7mroy0jGhGaEoUYECGsdyqXvJzouGoL/view'),
+                          //https://drive.google.com/file/d/1OKM5g_TJiNRBP2GkdYUIhv47goCWO5eX/view?usp=sharing
+                          Uri(scheme: 'https', host: 'drive.google.com', path: '/file/d/1OKM5g_TJiNRBP2GkdYUIhv47goCWO5eX/view'),
                         );
                       },
                       child: FittedBox(
@@ -88,7 +88,7 @@ class SideMenu extends StatelessWidget {
                                   Uri(scheme: 'https', host: 'www.linkedin.com', path: '/in/kareem-hamed-0051a71b2/'),
                               );
                             },
-                            icon: SvgPicture.asset("assets/icons/linkedin.svg"),
+                            icon: Image.asset("assets/icons/linkedin.png"),
                           ),
                           IconButton(
                             onPressed: () {

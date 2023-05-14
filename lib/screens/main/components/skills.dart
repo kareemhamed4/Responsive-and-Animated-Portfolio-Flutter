@@ -40,7 +40,7 @@ class Skills extends StatelessWidget {
             Expanded(
               child: AnimatedCircularProgressIndicator(
                 percentage: 0.9,
-                label: "Communication",
+                label: "Soft Skills",
               ),
             ),
           ],

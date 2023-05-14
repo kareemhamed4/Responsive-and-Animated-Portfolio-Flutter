@@ -39,23 +39,27 @@ class ProjectCard extends StatelessWidget {
                 context: context,
                 builder: (context) => SizedBox(
                   width: 200,
-                  child: AlertDialog(
-                    backgroundColor: secondaryColor,
-                    content: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Text(
-                          project.title!,
-                          style: Theme.of(context).textTheme.subtitle2,
+                  child: Center(
+                    child: SingleChildScrollView(
+                      child: AlertDialog(
+                        backgroundColor: secondaryColor,
+                        content: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text(
+                              project.title!,
+                              style: Theme.of(context).textTheme.subtitle2,
+                            ),
+                            SizedBox(
+                              height: 40,
+                            ),
+                            Text(
+                              project.description!,
+                              style: TextStyle(height: 1.5,color: bodyTextColor),
+                            ),
+                          ],
                         ),
-                        SizedBox(
-                          height: 40,
-                        ),
-                        Text(
-                          project.description!,
-                          style: TextStyle(height: 1.5,color: bodyTextColor),
-                        ),
-                      ],
+                      ),
                     ),
                   ),
                 ),
